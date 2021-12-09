@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Frank Ruhl Libre">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Sans">
+    <title>Bok Hotell</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="bok-header">
+            <div class="login">
+                <img class="logo" src="../image/logo/bonz.ai-logo-black_landscape.svg" alt="logo">
+                <button class="login-btn">Logga in</button>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bok.html">Bok Hotell</a></li>
+                    <li><a href="#">Rewards</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Företagskund</a></li>
+                    <li><a href="omHotell.html">Om Oss</a></li>
+                </ul>
+                
+            </nav>
+        </header>
+        <main class="bok-main">
+            <img class="top-pic" src="../image/photos/1410x591-elite-hotel-eden-park.jpg" alt="hotell-annors">
+            <section class="search-part">
+                <form class="search">
+                    <label for="select">Var</label>
+                    <select name="place" id="place">
+                        <optgroup label="välja stad">
+                            <option value="stockholm">Stockholm</option>
+                            <option value="">Görtborg</option>
+                            <option value="Malmö">Malmö</option>
+                        </optgroup>
+                        <optgroup label="hotell">
+                        </optgroup>
+                    </select>
+                </form>
+                    <form>
+                        <label for="date">Check in</label>
+                        <input type="date" name="checkInTid" id="checkInTid">
+                    </form>
+                    <form>
+                        <label for="">Check out</label>
+                        <input type="date" name="checkOutTid" id="checkOutTid">
+                    </form> 
+                    <input type="button" value="Sök" id="sok">
+            </section>
+            <h1>UPPLEV VÅRA HOTELL</h1>
+            <section class="recommed">
+                <div class="rum">
+                    <img src="../image/photos/06-night.jpg" alt="">
+                    <div class="rum-infor">
+                        <h2>ELITE HOTEL ADLON, STOCKHOLM</h2>
+                        <p>Personligt, charmigt med bästa läge på Vasagatan</p>
+                        <button>Läs mer</button>
+                    </div>
+                </div>
+                <div class="rum">
+                    <img src="../image/photos/05-night.jpg" alt="">
+                    <div class="rum-infor">
+                        <h2>ELITE HOTEL ADLON, STOCKHOLM</h2>
+                        <p>Personligt, charmigt med bästa läge på Vasagatan</p>
+                        <button>Läs mer</button>
+                    </div>
+                </div>
+                <div class="rum">
+                    <img src="../image/photos/02-night.jpg" alt="">
+                    <div class="rum-infor">
+                        <h2>ELITE HOTEL ADLON, STOCKHOLM</h2>
+                        <p>Personligt, charmigt med bästa läge på Vasagatan</p>
+                        <button>Läs mer</button>
+                    </div>
+                </div>
+                <div class="rum">
+                    <img src="../image/photos/03-night.jpg" alt="">
+                    <div class="rum-infor">
+                        <h2>ELITE HOTEL ADLON, STOCKHOLM</h2>
+                        <p>Personligt, charmigt med bästa läge på Vasagatan</p>
+                        <button>Läs mer</button>
+                    </div>
+                </div>
+                <div class="rum">
+                    <img src="../image/photos/04-night.jpg" alt="">
+                    <div class="rum-infor">
+                        <h2>ELITE HOTEL ADLON, STOCKHOLM</h2>
+                        <p>Personligt, charmigt med bästa läge på Vasagatan</p>
+                        <button>Läs mer</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bok-footer">
+                <section class="bonz">
+                    <ul>
+                        <li>Bonz.ai</li>
+                        <li><a href="">Hotell</a></li>
+                        <li><a href="">Konferens</a></li>
+                        <li><a href="">Rewards</a></li>
+                        <li><a href="">Persentkort</a></li>
+                        <li><a href="">Restanrager</a></li>
+                    </ul>
+                </section>
+                <section class="bokning">
+                    <ul>
+                        <li>Bokkning</li>
+                        <li><a href="">Våra Hotellraket</a></li>
+                        <li><a href="">Hitta Din Bokning</a></li>
+                        <li><a href="">Avboka</a></li>
+                    </ul>
+                </section>
+                <section class="onOss">
+                    <ul>
+                        <li>Om Oss</li>
+                        <li><a href="">Om Oss</a></li>
+                        <li><a href="">Karriär</a></li>
+                        <li><a href="">Kommande Hotell</a></li>
+                        <li><a href="">Kontakta Oss</a></li>
+                    </ul>
+                </section>
+                <section class="ourHotel">
+                    <ul>
+                        <li>Våra Hotell</li>
+                        <li><a href="">Hotell i Stockholm</a></li>
+                        <li><a href="">Hotell i Göteborg</a></li>
+                        <li><a href="">Hotell i Malmö</a></li>
+                        <li><a href="">Hotell i Sverige</a></li>
+                    </ul>
+                </section>
+                <section class="email">
+                    <form class="news">
+                        <h3>Nyhetsbrev</h3>
+                        <label for="email">E-post</label>
+                        <input type="email" name="email" id="email">
+                        <label for="">Namn</label>
+                        <input type="text" name="name" id="name">
+                        <button>Prenumera</button>
+                        
+                    </form>
+                </section>
+        </footer>
+    </div>
+</body>
+</html>

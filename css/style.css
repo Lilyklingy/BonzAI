@@ -1,0 +1,507 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.headside-header, .bok-header, .omHotell-header{
+    grid-area: header;
+}
+.headside-main, .bok-main, .omHotell-main{
+    grid-area: main;
+}
+.headside-footer, .bok-footer, .omHotell-footer{
+    grid-area: footer;
+}
+/*------------Font & Color--------*/
+button, #sok{
+    width: 80px;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: rgb(53, 65, 83);
+}
+.navbar{
+    background-color: rgb(138, 99, 63);
+}
+.part2{
+    background-color: sienna;
+}
+.part2-middle{
+    background-image: url("../image/photos/1410x591-elite-hotel-eden-park.jpg");
+    background-position: center;
+}
+.infor{
+    background-color: rgba(255,255,255,80%);
+    box-shadow: black 5px 5px 10px;
+}
+.part4{
+    background-image: url("../image/photos/1920x645-wide-rewards.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.omHotell-main-part3{
+    background-color: sienna;
+    
+    color: white;
+}
+ul li {
+    list-style: none;
+    font-family: "Frank Ruhl Libre";
+}
+a{
+    font-family: "Fira Sans";
+    text-decoration: none;
+}
+footer, footer a{
+    background-color: rgb(34, 34, 36);
+    color: white;
+
+}
+h1, h2,h3{
+    font-family: "Frank Ruhl Libre";
+}
+p{
+    font-family: "Fira Sans";
+    font-size: 14px;
+}
+/*-------Phone size------*/
+@media screen and (min-width:374px) and (max-width:768px){
+    .wrapper{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "header"
+        "main"
+        "main"
+        "main"
+        "footer"
+        "footer";
+    }
+    .headside-header, .omHotell-header, .bok-header{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(2,50px);
+    }
+    .login{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .logo{
+        width: 35%;
+        margin: 5px;
+    }
+    .login-btn{
+        width: 75px;
+        height: 30px;
+        color: white;
+        border: none;
+        margin: 5px;
+    }
+    .navbar{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .navbar ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+    }
+    .navbar ul li{
+        text-align: center;
+        padding: 0  0.5rem;
+    }
+    .navbar ul li a{
+        font-size: 12px;
+        color: white;
+    }
+    .search-part{
+        width: 100%;
+        
+        background-color: rgba(0,0,0,80%);
+        display: flex;
+        flex-direction: column;
+        padding:3rem 1rem;        
+    }
+    .search-part form{
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        "label select";
+        gap: 1rem;
+    }
+    .search-part form label{
+        font-size: 0.8rem;
+        color: white;
+        grid-area: label;
+    }
+    .search-part form #place{
+        width: 100%;
+        height: 30px;
+        border: none;
+        grid-area: select;
+    }
+    #checkInTime, #checkOutTime{
+        grid-area: select;
+        width: 100%;
+    }
+    #sok{
+        border: none;
+
+    }
+    .headside-main, .bok-main, .omHotell-main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .part1{
+        max-width: 340px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .part1 section{
+        padding: 5px;
+    }
+    .part1 h1{
+        font-size: 2rem;
+    }
+    .part1 img{
+        width: 100%;
+    }
+    button{
+        margin-bottom: 1rem;
+    }
+    .part2{
+        width: 100%;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .part2-middle{
+        width: 100%;
+        height: 15rem;
+        text-align: center;
+    }
+    .infor{
+        width: 85%;
+        height: 180px;
+        padding: 5px;
+        margin: 1.5rem auto 0 auto;
+    }
+    .part3{
+        max-width: 340px;
+        display: flex;
+        flex-direction: column;
+    }
+    .part3 img{
+        width: 100%;
+    }
+    .part4{
+        width: 100%;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .part4-middle{
+        width: 340px;
+        height: 350px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer{
+        padding: 5rem 0 2rem 2rem;
+    }
+    .email{
+        background-color: white;
+        width: 90%;
+        color: black;
+        padding: 3rem;
+    }
+    .email .news{
+        display: flex;
+        flex-direction: column;
+    }
+    .email .news label{
+        padding: 1rem 0;
+    }
+    .email .news #email, #name{
+        padding: 0.5rem;
+    }
+    .email .news button{
+        margin-top: 1rem;
+    }
+    /*--------Bok rum------*/
+    img{
+        width: 100%;
+    }
+    .rum-infor{
+        padding: 1rem;
+    }
+    /*--------Om Oss-------*/
+    .omHotell-main-part1{
+        display: flex;
+        flex-direction: column;
+    }
+    .omHotell-main img{
+        width: 100%;
+    }
+    .part1-article{
+        padding: 1rem;
+    }
+    .omHotell-main-part2 .text{
+        text-align: center;
+        padding: 1rem;
+    }
+    .omHotell-main-part3{
+        padding: 2rem 0;
+    }
+    .text{
+        padding: 1rem;
+    }
+    .part4-article{
+        text-align: center;
+        padding: 1rem;
+    }
+    
+}
+/*---------Table size-------*/
+@media screen and (min-width:768px){
+    .wrapper{
+        width: 100%;
+    }
+    .headside-header, .bok-header, .omHotell-header{
+        width: 100%;
+    }
+    .login{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo{
+        width: 20%;
+        margin: 10px;
+    }
+    .navbar{
+        width: 100%;
+        height: 3rem;
+    }
+    .navbar ul {
+        height: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar ul li a{
+        color: white;
+    }
+    .headside-main{
+        width: 100%;
+    }
+    .search-part{
+        width: 100%;
+        height: 5rem;
+        background-color: rgba(0,0,0,80%);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-part form{
+        color: white;
+    }
+    .search-part form label{
+        padding: 10px;
+    }
+    #place, #checkInTid,#checkOutTid{
+        width: 200px;
+        padding: 5px;
+    }
+    .search-part #sok{
+        margin-left: 20px;
+        width: 100px;
+        height: 40px;
+    }
+    .part1{
+        width: 90%;
+        margin: 10rem auto 5rem auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .part1 h1{
+        width: 100%;
+    }
+    .part1-left,.part1-middle,.part1-right{
+        width: 30%;
+        margin: 1rem;
+    }
+    .part1 img{
+        width: 100%;
+    }
+    .part2{
+        width: 100%;
+        padding: 5rem;
+    }
+    .part2-middle{
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 5rem;
+    }
+    .infor{
+        text-align: center;
+        padding: 2rem;
+    }
+    .part3{
+        width: 90%;
+        margin: 7rem auto 5rem auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .part3 h1{
+        width: 100%;
+    }
+    .part3 img{
+        width: 100%;
+    }
+    .part3-left,.part3-right{
+        width: 45%;
+        margin: 1rem;
+    }
+    .part4{
+        width: 100%;
+        padding: 3rem;
+    }
+    .part4-middle{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .omHotell-footer, .headside-footer, .bok-footer{
+        margin-top: 5rem;
+        padding: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .omHotell-footer ul, .headside-footer ul, .bok-footer ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
+    }
+    .email{
+        background-color: white;
+        width: 20%;
+        color: black;
+        padding: 3rem;
+    }
+    .email .news{
+        display: flex;
+        flex-direction: column;
+    }
+    .email .news label{
+        padding: 1rem 0;
+    }
+    .email .news #email, #name{
+        padding: 0.5rem;
+    }
+    .email .news button{
+        margin-top: 1rem;
+    }
+    /*---------------BOK side------------*/
+    .bok-main{
+        width: 100%;
+    }
+    .top-pic{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .bok-main h1{
+        text-align: center;
+        margin-top: 5rem;
+    }
+    .recommed{
+        width: 90%;
+        margin:  0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .recommed img{
+        width: 450px;
+    }
+    .rum{
+       margin: 1rem; 
+    }
+    /*--------------Om Hotell -----------*/
+    .omHotell-main{
+        width: 100%;
+    }
+    .omHotell-main-part1, .omHotell-main-part4{
+        max-width: 1000px;
+        margin: 5rem auto;
+        display: flex;
+        flex-direction: row;
+        align-items: space-around;
+        justify-content: center;
+    }
+    .omHotell-main-part1 img, .omHotell-main-part4 img{
+        width: 50%;
+    }
+    .part1-article p ,.part1-article h2,.part4-article p, .part4-article h2{
+        margin-left: 5rem;
+        width: 100%;
+    }
+    .omHotell-main-part2{
+        max-width: 1000px;
+        margin: 3rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .omHotell-main-part3{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    .part3-left, .part3-right{
+        max-width: 45%;
+    }
+    .omHotell-main-part3 img{
+        width: 100%;
+    }
+    
+}
