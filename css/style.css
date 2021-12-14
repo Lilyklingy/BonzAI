@@ -56,6 +56,9 @@ a{
     font-family: "Fira Sans";
     text-decoration: none;
 }
+a:hover{
+    color: rgb(53, 65, 83);
+}
 footer, footer a{
     background-color: rgb(34, 34, 36);
     color: white;
